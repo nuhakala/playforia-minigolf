@@ -383,6 +383,7 @@ class TrackInfoPanel extends Panel implements ActionListener {
 
     private String[] parseBestPlayerInformation(String data) {
         String[] bestPlayerInformation = new String[] {null, null};
+        System.out.println(data);
         if (data != null) {
             int splitPosition = data.indexOf(',');
             bestPlayerInformation[0] = data.substring(0, splitPosition);
